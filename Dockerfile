@@ -25,7 +25,7 @@ RUN apt install -y \
     # Web server
     nginx
 
-RUN pip3 install ephem
+RUN pip3 install ephem tzlocal
 
 COPY install/install_rtlsdr.sh /usr/local/bin/install_rtlsdr.sh
 COPY install/install_satdump.sh /usr/local/bin/install_satdump.sh
